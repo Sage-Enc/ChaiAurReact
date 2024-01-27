@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full h-screen duration-200" style={{ backgroundColor: color }}>
+      <div className="w-full h-screen duration-[5000ms]" style={{ backgroundColor: color }}>
         <h1 className="font-bold text-5xl text-center pt-10 text-white">VIBGYOR COLORS</h1>
         <div className="w-2/3 h-28 bg-white fixed bottom-0 mx-60 mb-20 rounded-xl flex justify-around">
           <button onClick={()=> setColor("violet")} className="w-20 h-20 bg-violet-600 border-black border-2 text-white rounded-full my-4 ">Violet</button>
