@@ -8,10 +8,10 @@ function App() {
         Hello world!
       </h1>
       <div className="flex">
-        <Card username = "Sage"/>
-        <Card username = "Phoenix"/>
-        <Card username = "Jett"/>
-        <Card username = "Raze"/>
+        <Card username = "Sage" position="CEO & Founder"/>
+        <Card username = "Phoenix" position="CMO & Co-Founder"/>
+        <Card username = "Jett" position="CFO & Co-Founder"/>
+        <Card username = "Raze" position="CTO & Co-Founder"/>
       </div>
       
     </>

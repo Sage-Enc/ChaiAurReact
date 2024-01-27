@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({username = "Agent"}) {
+function Card({username = "Agent", position="Employee"}) {
     console.log(username)
   return (
     <>
@@ -13,7 +13,7 @@ function Card({username = "Agent"}) {
             />
             <div className="p-4">
               <h1 className="text-lg font-semibold">{username}</h1>
-              <h6 className="mt-3 font-medium">Founder and CEO, DevUI</h6>
+              <h6 className="mt-3 font-medium">{position}</h6>
               <p className="mt-3 text-sm text-gray-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Excepturi, debitis?
