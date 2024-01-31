@@ -20,28 +20,28 @@ function Footer() {
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
                                     <NavLink to="/" className={({isActive})=>
-                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                        `hover:underline ${isActive? "border-gray-500 border-2": ""}`
                                     }>
                                         Home
                                     </NavLink>
                                 </li>
                                 <li className="mb-4">
                                     <NavLink to="/about" className={({isActive})=>
-                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                        `hover:underline ${isActive? " border-gray-500 border-2": ""}`
                                     }>
                                         About
                                     </NavLink>
                                 </li>
                                 <li className="mb-4">
                                     <NavLink to="/contact" className={({isActive})=>
-                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                        `hover:underline ${isActive? " border-gray-500 border-2": ""}`
                                     }>
                                         Contact
                                     </NavLink>
                                 </li>
                                 <li className="mb-4">
                                     <NavLink to="/github" className={({isActive})=>
-                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                        `hover:underline ${isActive? "border-gray-500 border-2": ""}`
                                     }>
                                         Github
                                     </NavLink>
