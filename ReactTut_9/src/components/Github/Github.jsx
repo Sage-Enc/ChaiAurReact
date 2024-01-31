@@ -1,5 +1,5 @@
-import React, { useLoaderData } from 'react'
-import GithubInfoLoader from './GithubInfoLoader';
+import React from 'react'
+import { useLoaderData } from 'react-router-dom';
 
 function Github() {
 
@@ -29,8 +29,3 @@ function Github() {
 }
 
 export default Github;
-
-// export const GithubInfoLoader = async () => {
-//     const res = await fetch('https://api.github.com/users/sage-enc')
-//     return res.json();
-// }

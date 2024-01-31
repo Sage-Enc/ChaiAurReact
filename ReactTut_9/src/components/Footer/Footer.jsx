@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Footer() {
     return (
@@ -19,14 +19,32 @@ function Footer() {
                             <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
                             <ul className="text-gray-500 font-medium">
                                 <li className="mb-4">
-                                    <Link to="/" className="hover:underline">
+                                    <NavLink to="/" className={({isActive})=>
+                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                    }>
                                         Home
-                                    </Link>
+                                    </NavLink>
                                 </li>
-                                <li>
-                                    <Link to="/about" className="hover:underline">
+                                <li className="mb-4">
+                                    <NavLink to="/about" className={({isActive})=>
+                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                    }>
                                         About
-                                    </Link>
+                                    </NavLink>
+                                </li>
+                                <li className="mb-4">
+                                    <NavLink to="/contact" className={({isActive})=>
+                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                    }>
+                                        Contact
+                                    </NavLink>
+                                </li>
+                                <li className="mb-4">
+                                    <NavLink to="/github" className={({isActive})=>
+                                        `hover:underline ${isActive? "border border-gray-500 border-2": ""}`
+                                    }>
+                                        Github
+                                    </NavLink>
                                 </li>
                             </ul>
                         </div>
